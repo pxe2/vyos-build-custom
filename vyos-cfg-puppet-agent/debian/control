@@ -1,5 +1,5 @@
 Source: vyos-cfg-puppet-agent
-Section: unknown
+Section: admin
 Priority: extra
 Maintainer: BeryJu.org <support@beryju.org>
 Uploaders: Jens Langhammer <jens@beryju.org>, BeryJu.org <support@beryju.org>
