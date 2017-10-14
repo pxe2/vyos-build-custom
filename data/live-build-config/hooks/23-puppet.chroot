@@ -1,11 +1,9 @@
 #!/bin/bash
 
-apt install apt-transport-https
-
+apt-get install apt-transport-https
 wget -O - -q https://apt.beryju.org/public.key | apt-key add -
-
+wget -O - -q https://apt.puppetlabs.com/pubkey.gpg | apt-key add -
 echo "deb https://apt.beryju.org/ stable beryjuorg" >> /etc/apt/sources.list
-
-apt update
-
-apt install --assume-yes vyos-cfg-puppet-agent
+echo "deb http://apt.puppetlabs.com jessie puppet5" >> /etc/apt/sources.list
+apt-get update
+apt-get install --assume-yes vyos-cfg-puppet-agent puppet-agent
