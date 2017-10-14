@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "
+set /files/etc/puppetlabs/puppet/puppet.conf
+set /files/etc/puppetlabs/puppet/puppet.conf/main
+set /files/etc/puppetlabs/puppet/puppet.conf/main/vardir "/opt/puppetlabs/puppet/cache"
+set /files/etc/puppetlabs/puppet/puppet.conf/main/logdir "/var/log/puppetlabs/puppet"
+set /files/etc/puppetlabs/puppet/puppet.conf/main/rundir "/var/run/puppetlabs"
+set /files/etc/puppetlabs/puppet/puppet.conf/main/ssldir "/config/puppet/ssl"
+set /files/etc/puppetlabs/puppet/puppet.conf/agent
+set /files/etc/puppetlabs/puppet/puppet.conf/agent/pluginsync "true"
+set /files/etc/puppetlabs/puppet/puppet.conf/agent/report "true"
+set /files/etc/puppetlabs/puppet/puppet.conf/agent/ignoreschedules "true"" | augtool
+

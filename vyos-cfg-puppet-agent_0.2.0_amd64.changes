@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Sat, 14 Oct 2017 12:49:42 +0000
+Source: vyos-cfg-puppet-agent
+Binary: vyos-cfg-puppet-agent
+Architecture: source amd64
+Version: 0.2.0
+Distribution: stable
+Urgency: medium
+Maintainer: BeryJu.org <support@beryju.org>
+Changed-By: Jens Langhammer <jens.langhammer@beryju.org>
+Description:
+ vyos-cfg-puppet-agent - <insert up to 60 chars description>
+Changes:
+ vyos-cfg-puppet-agent (0.2.0) stable; urgency=medium
+ .
+   * Added force command to run puppet agent
+Checksums-Sha1:
+ 47db5e45e85a69e169765e5dc8788ca4172b2deb 728 vyos-cfg-puppet-agent_0.2.0.dsc
+ 677e158df2b597257b05bfab1d2ef08ba77257b8 2564 vyos-cfg-puppet-agent_0.2.0.tar.xz
+ 5088817ea038709627fc44d95278dae537ccdd78 4932 vyos-cfg-puppet-agent_0.2.0_amd64.buildinfo
+ 706a4a0407ba9293d9909ea21c12fc8e7af8e00c 2696 vyos-cfg-puppet-agent_0.2.0_amd64.deb
+Checksums-Sha256:
+ 160b5e84c130a44569f1f65ca0d3a3d5706a88c4ebbb2a52316c004131d6e017 728 vyos-cfg-puppet-agent_0.2.0.dsc
+ d0c49d49aad4f71fce3b172ac2b5195bda3af668eb4ef701f9e174ff83c0643e 2564 vyos-cfg-puppet-agent_0.2.0.tar.xz
+ d0e0690b19750b4d21366a81cb8b5462512c26126ae71e872024ee4297eda5d0 4932 vyos-cfg-puppet-agent_0.2.0_amd64.buildinfo
+ 4beca0e3955ef4e38ebd9426561132fa64abcdd08ce152316d8e36bb327b7253 2696 vyos-cfg-puppet-agent_0.2.0_amd64.deb
+Files:
+ 6bc7a8a27d0b02bc6011ec27a00f70d4 728 unknown extra vyos-cfg-puppet-agent_0.2.0.dsc
+ 33f91518716b269f4c71d6422abc205e 2564 unknown extra vyos-cfg-puppet-agent_0.2.0.tar.xz
+ 6d07518d9ed2914c11c213f3eb379d7e 4932 unknown extra vyos-cfg-puppet-agent_0.2.0_amd64.buildinfo
+ c1afa1bb4a052da6b271aab86d23fe5d 2696 unknown extra vyos-cfg-puppet-agent_0.2.0_amd64.deb

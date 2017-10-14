@@ -1,4 +1,5 @@
 debconf
 gpgv
 gnupg
+apt-transport-https
 vyos-world

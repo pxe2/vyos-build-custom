@@ -1,0 +1,14 @@
+Source: vyos-cfg-puppet-agent
+Section: unknown
+Priority: extra
+Maintainer: BeryJu.org <support@beryju.org>
+Uploaders: Jens Langhammer <jens@beryju.org>, BeryJu.org <support@beryju.org>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.8.4
+Homepage: https://git.beryju.org/BeryJu.org/vyos-build-puppet
+
+Package: vyos-cfg-puppet-agent
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, puppet-agent, augeas-tools
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>

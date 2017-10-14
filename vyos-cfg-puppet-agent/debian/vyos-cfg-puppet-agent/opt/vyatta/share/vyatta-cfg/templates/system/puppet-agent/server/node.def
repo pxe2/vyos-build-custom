@@ -1,0 +1,4 @@
+type: txt
+help: The Puppet master server to request configurations from.
+create: sudo augtool 'set /files/etc/puppetlabs/puppet/puppet.conf/agent/server $VAR(@)' >/dev/null
+delete: sudo augtool 'rm /files/etc/puppetlabs/puppet/puppet.conf/agent/server' >/dev/null

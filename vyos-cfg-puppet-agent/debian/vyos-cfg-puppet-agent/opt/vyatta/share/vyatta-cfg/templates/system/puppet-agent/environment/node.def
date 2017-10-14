@@ -1,0 +1,4 @@
+type: txt
+help: The environment to request when contacting the Puppet master.
+create: sudo augtool 'set /files/etc/puppetlabs/puppet/puppet.conf/agent/environment $VAR(@)' >/dev/null
+delete: sudo augtool 'rm /files/etc/puppetlabs/puppet/puppet.conf/agent/environment' >/dev/null

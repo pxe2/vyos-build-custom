@@ -1,0 +1,11 @@
+vyos-cfg-puppet-agent (0.2.0) stable; urgency=medium
+
+  * Added force command to run puppet agent
+
+ -- Jens Langhammer <jens.langhammer@beryju.org>  Sat, 14 Oct 2017 12:49:42 +0000
+
+vyos-cfg-puppet-agent (0.1.0) stable; urgency=medium
+
+  * Initial release.
+
+ -- Jens Langhammer <jens.langhammer@beryju.org>  Fri, 13 Oct 2017 17:06:35 +0000

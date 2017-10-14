@@ -1,0 +1,6 @@
+8c23a6f12a30c7ee074954b8d923bad4  opt/vyatta/share/vyatta-cfg/templates/system/puppet-agent/certname/node.def
+36d7091e9e6d6739e2ee2d1e52d871b3  opt/vyatta/share/vyatta-cfg/templates/system/puppet-agent/environment/node.def
+e41eec7c63a9fd8dbd79236862d250f1  opt/vyatta/share/vyatta-cfg/templates/system/puppet-agent/node.def
+e3514e849d8a21760134e4581945bef3  opt/vyatta/share/vyatta-cfg/templates/system/puppet-agent/server/node.def
+217d3801c966bfe3e21b8520d09788ab  usr/share/doc/vyos-cfg-puppet-agent/changelog.gz
+0e0a81392aac7ccb5770e842a8c00af3  usr/share/doc/vyos-cfg-puppet-agent/copyright

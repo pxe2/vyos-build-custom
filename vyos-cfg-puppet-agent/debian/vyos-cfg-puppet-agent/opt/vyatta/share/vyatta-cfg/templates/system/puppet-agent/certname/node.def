@@ -1,0 +1,4 @@
+type: txt
+help: The node’s certificate name, and the unique identifier it uses when requesting catalog, defaults to the fully qualified domain name.
+create: sudo augtool 'set /files/etc/puppetlabs/puppet/puppet.conf/agent/certname $VAR(@)' >/dev/null
+delete: sudo augtool 'rm /files/etc/puppetlabs/puppet/puppet.conf/agent/certname' >/dev/null
