@@ -1,3 +1,10 @@
+vyos-cfg-puppet-agent (0.2.3) stable; urgency=high
+
+  * Fix services -> service
+  * Fix syntax of server
+
+ -- Jens Langhammer <jens.langhammer@beryju.org>  Sat, 14 Oct 2017 20:47:31 +0000
+
 vyos-cfg-puppet-agent (0.2.2) stable; urgency=medium
 
   * Create SSL Folder in /config

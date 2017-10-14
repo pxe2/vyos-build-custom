@@ -1,8 +1,8 @@
-8c23a6f12a30c7ee074954b8d923bad4  opt/vyatta/share/vyatta-cfg/templates/services/puppet-agent/certname/node.def
-36d7091e9e6d6739e2ee2d1e52d871b3  opt/vyatta/share/vyatta-cfg/templates/services/puppet-agent/environment/node.def
-bb12ba0243e5ab4404ac77ef331fa56e  opt/vyatta/share/vyatta-cfg/templates/services/puppet-agent/node.def
-39b673ab3f9c9947ebdf8966edacbceb  opt/vyatta/share/vyatta-cfg/templates/services/puppet-agent/server/node.def
+8c23a6f12a30c7ee074954b8d923bad4  opt/vyatta/share/vyatta-cfg/templates/service/puppet-agent/certname/node.def
+36d7091e9e6d6739e2ee2d1e52d871b3  opt/vyatta/share/vyatta-cfg/templates/service/puppet-agent/environment/node.def
+bb12ba0243e5ab4404ac77ef331fa56e  opt/vyatta/share/vyatta-cfg/templates/service/puppet-agent/node.def
+8737cf626f2243da475572e5019c8cfd  opt/vyatta/share/vyatta-cfg/templates/service/puppet-agent/server/node.def
 85d13f58744779745c225f94930ad183  opt/vyatta/share/vyatta-op/templates/force/puppet-agent/node.def
 1b69b3a21c19c7d05f2a78dc771cd618  opt/vyatta/share/vyatta-op/templates/force/puppet-agent/run/node.def
-39cc5718a760593368c31ce1b7941b21  usr/share/doc/vyos-cfg-puppet-agent/changelog.gz
+1bec3698331b418c14ce0292a0a4ae35  usr/share/doc/vyos-cfg-puppet-agent/changelog.gz
 0e0a81392aac7ccb5770e842a8c00af3  usr/share/doc/vyos-cfg-puppet-agent/copyright

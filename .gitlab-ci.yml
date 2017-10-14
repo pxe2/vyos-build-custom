@@ -6,6 +6,7 @@ before_script:
 after_script:
   - "make clean"
   - "rm -rf build/cache/*"
+  - "rm -rf ~/.gnupg/"
 stages:
   - build
 image: debian:8
@@ -14,10 +15,12 @@ build-iso:
   script:
     - make clean
     - make iso
-    - mv build/live-image-amd64.hybrid.iso .
+    - mv build/live-image-amd64.hybrid.iso output/
+    - echo "${CI_GPG_PRIVATE}" | gpg --import
+    - echo "${CI_GPG_KEY}" | gpg --batch --yes --passphrase-fd 0 -a --output live-image-amd64.hybrid.iso.asc --detach-sig live-image-amd64.hybrid.iso
   stage: build
   artifacts:
     paths:
-    - live-image-amd64.hybrid.iso
+    - output/
     expire_in: 2 days
 
