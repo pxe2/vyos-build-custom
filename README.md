@@ -1,3 +1,6 @@
+Permalin: `https://git.beryju.org/BeryJu.org/vyos-build-puppet/-/jobs/artifacts/current/raw/vyos.iso?job=build-iso`
+
+
 VyOS toplevel build
 ===================
 

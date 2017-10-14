@@ -1,7 +1,7 @@
 # Global Variables
 before_script:
   - "apt-get update && apt-get install make live-build pbuilder devscripts python3-pystache --assume-yes"
-  - "./configure --build-type release --build-by $(whoami)@$(hostname -f) --architecture amd64 --debian-mirror 'http://ftp.debian.org/debian/' --version $CI_JOB_ID"
+  - "./configure --build-type release --build-by $(hostname -f)@$CI_RUNNER_DESCRIPTION --architecture amd64 --debian-mirror 'http://ftp.debian.org/debian/' --version '$CI_JOB_ID-beryjuorg+puppet+ipv6'"
   - "cat build/build-config.json"
 after_script:
   - "make clean"
@@ -14,10 +14,10 @@ build-iso:
   script:
     - make clean
     - make iso
-    - mv build/live-image-amd64.hybrid.iso vyos.iso
+    - mv build/live-image-amd64.hybrid.iso .
   stage: build
   artifacts:
     paths:
-    - vyos.iso
+    - live-image-amd64.hybrid.iso
     expire_in: 2 days
 
