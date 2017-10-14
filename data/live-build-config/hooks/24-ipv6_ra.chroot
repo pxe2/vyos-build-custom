@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "sysctl -w net.ipv6.conf.eth1.accept_ra=2" >> /opt/vyatta/etc/config/scripts/vyatta-postconfig-bootup.script
