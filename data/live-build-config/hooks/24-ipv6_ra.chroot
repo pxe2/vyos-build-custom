@@ -1,3 +1,15 @@
 #!/bin/bash
+mkdir -p /opt/vyatta/share/vyatta-cfg/templates/interfaces/ethernet/node.tag/ipv6/accept-router-advert/
+echo <<EOF > /opt/vyatta/share/vyatta-cfg/templates/interfaces/ethernet/node.tag/ipv6/accept-router-advert/node.def
+help: Configure how interface reacts to Router Advertisements (RAs)
+type: u32
+val_help: 0; Do not accept Router Advertisements.
+val_help: 1; Accept Router Advertisements if forwarding is disabled.
+val_help: 2; Overrule forwarding behaviour. Accept Router Advertisements even if forwarding is enabled.
+allowed: echo "0 1 2"
+syntax:expression: $VAR(@) in "0", "1", "2"; "Value must be 0, 1, or 2"
+default: 1
+create: sudo /sbin/sysctl -w "net.ipv6.conf.$VAR(../@).accept_ra=$VAR(@)"
+delete: sudo /sbin/sysctl -w "net.ipv6.conf.$VAR(../@).accept_ra=1"
+EOF
 
-echo "sysctl -w net.ipv6.conf.eth1.accept_ra=2" >> /opt/vyatta/etc/config/scripts/vyatta-postconfig-bootup.script
