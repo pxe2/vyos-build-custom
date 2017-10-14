@@ -1,0 +1,13 @@
+priority: 999
+help: puppet-agent configuration
+create:
+    mkdir -p /config/puppet/ssl/
+    echo "set /files/etc/puppetlabs/puppet/puppet.conf/main/ssldir /config/puppet/ssl/
+    set /files/etc/puppetlabs/puppet/puppet.conf/agent/pluginsync true
+    set /files/etc/puppetlabs/puppet/puppet.conf/agent/report true
+    set /files/etc/puppetlabs/puppet/puppet.conf/agent/ignoreschedules true" | sudo augtool -s
+    sudo /bin/systemctl enable puppet
+    sudo /bin/systemctl start puppet
+delete:
+    sudo /bin/systemctl disable puppet
+    sudo /bin/systemctl stop puppet

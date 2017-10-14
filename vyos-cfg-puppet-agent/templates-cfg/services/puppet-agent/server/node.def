@@ -1,4 +1,7 @@
-type: txt
+type: txt,ipv4,ipv6
 help: The Puppet master server to request configurations from.
+val_help: txt: FQDN of Puppetmaster.
+val_help: ipv4: IPv4 Address of Puppetmaster.
+val_help: ipv6: IPv6 Address of Puppetmaster.
 create: sudo augtool 'set /files/etc/puppetlabs/puppet/puppet.conf/agent/server $VAR(@)' >/dev/null
 delete: sudo augtool 'rm /files/etc/puppetlabs/puppet/puppet.conf/agent/server' >/dev/null

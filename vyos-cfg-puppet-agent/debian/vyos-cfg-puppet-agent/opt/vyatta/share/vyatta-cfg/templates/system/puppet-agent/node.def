@@ -1,4 +1,0 @@
-priority: 999
-help: Puppet-agent configuration
-delete: sudo /bin/systemctl disable puppet && sudo /bin/systemctl stop puppet 
-end: sudo /bin/systemctl enable puppet && sudo /bin/systemctl start puppet

@@ -1,2 +1,2 @@
 help: Force a Puppet Run
-run: /opt/puppetlabs/puppet/bin/puppet agent -t
+run: sudo /opt/puppetlabs/puppet/bin/puppet agent -t

@@ -1,8 +1,8 @@
 Package: vyos-cfg-puppet-agent
-Version: 0.2.1
+Version: 0.2.2
 Architecture: amd64
 Maintainer: BeryJu.org <support@beryju.org>
-Installed-Size: 30
+Installed-Size: 31
 Depends: puppet-agent, augeas-tools
 Section: admin
 Priority: extra
