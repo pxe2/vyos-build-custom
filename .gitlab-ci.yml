@@ -1,6 +1,6 @@
 # Global Variables
 before_script:
-  - "apt-get install make live-build pbuilder devscripts python3-pystache --assume-yes"
+  - "apt-get update && apt-get install make live-build pbuilder devscripts python3-pystache --assume-yes"
   - "./configure --build-type release --build-by support@beryju.org --architecture amd64 --debian-mirror 'http://ftp.debian.org/debian/'"
 stages:
   - build
