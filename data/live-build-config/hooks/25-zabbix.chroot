@@ -1,6 +1,7 @@
 #!/bin/bash
 echo I: Installing Zabbix Agent
-wget -O - -q http://repo.zabbix.com/zabbix-official-repo.key | apt-key add
+wget -O - -q http://repo.zabbix.com/zabbix-official-repo.key | apt-key add -
 echo "deb http://repo.zabbix.com/zabbix/3.4/debian/ jessie main" >> /etc/apt/sources.list
 apt-get update
 apt-get install zabbix-agent --asume-yes
+
