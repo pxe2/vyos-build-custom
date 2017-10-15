@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo I: Installing puppet-agent
 apt-get install apt-transport-https
 wget -O - -q https://apt.beryju.org/public.key | apt-key add -
 wget -O - -q https://apt.puppetlabs.com/pubkey.gpg | apt-key add -

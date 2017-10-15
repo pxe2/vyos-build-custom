@@ -1,7 +1,7 @@
 # Global Variables
 before_script:
   - "apt-get update && apt-get install make live-build pbuilder devscripts python3-pystache --assume-yes"
-  - "./configure --build-type release --build-by $(hostname -f)@$CI_RUNNER_DESCRIPTION --architecture amd64 --debian-mirror 'http://ftp.debian.org/debian/' --version $CI_JOB_ID-beryjuorg"
+  - "./configure --build-type release --build-by $(hostname -f)@$CI_RUNNER_DESCRIPTION --architecture amd64 --debian-mirror 'http://ftp.debian.org/debian/' --version $CI_JOB_ID.$CI_COMMIT_REF_SLUG-beryjuorg"
   - "cat build/build-config.json"
 after_script:
   - "make clean"
