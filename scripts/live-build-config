@@ -36,7 +36,7 @@ lb config noauto \
         --architectures {{architecture}} \
         --bootappend-live "boot=live components hostname=vyos username=live nopersistence noautologin nonetworking union=overlay" \
         --linux-flavours {{architecture}}-vyos \
-        --linux-packages linux-image-4.4.47 \
+        --linux-packages linux-image-4.4.95 \
         --bootloader syslinux \
         --binary-images iso-hybrid \
         --debian-installer false \
@@ -51,7 +51,9 @@ lb config noauto \
         --mirror-binary {{debian_mirror}} \
         --mirror-binary-security {{debian_security_mirror}} \
         --archive-areas "main contrib non-free" \
-        --firmware-chroot true
+        --firmware-chroot true \
+        --updates true \
+        --security true
         "${@}"
 """
 
