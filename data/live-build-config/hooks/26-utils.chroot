@@ -1,0 +1,5 @@
+#!/bin/bash
+echo I: Installing utility packages
+apt-get update
+apt-get install --assume-yes vim iperf3 iptraf-ng
+

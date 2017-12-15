@@ -5,5 +5,9 @@ wget -O - -q https://apt.beryju.org/public.key | apt-key add -
 wget -O - -q https://apt.puppetlabs.com/pubkey.gpg | apt-key add -
 echo "deb https://apt.beryju.org/ stable beryjuorg" >> /etc/apt/sources.list
 echo "deb http://apt.puppetlabs.com jessie puppet5" >> /etc/apt/sources.list
+wget http://ftp.us.debian.org/debian/pool/main/a/apt/apt-transport-https_1.4.8_amd64.deb
+dpkg -i apt-transport-https_1.4.8_amd64.deb
+rm apt-transport-https_1.4.8_amd64.deb
 apt-get update
 apt-get install --assume-yes vyos-cfg-puppet-agent puppet-agent
+

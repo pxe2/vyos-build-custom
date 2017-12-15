@@ -1,5 +1,0 @@
-#!/bin/bash
-echo I: Installing vim
-apt-get update
-apt-get install --assume-yes vim
-
