@@ -2,5 +2,5 @@
 echo I: Installing backported OpenVPN
 echo "deb http://ftp.debian.org/debian jessie-backports main" >> /etc/apt/sources.list
 apt-get update
-apt-get install --assume-yes -t stretch-backports openvpn
+apt-get install --assume-yes -t jessie-backports openvpn
 
