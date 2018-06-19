@@ -8,9 +8,13 @@ netcat
 netcat6
 socat
 telnet
-tcpdump
 nano
-vim
+vim-tiny
 screen
 minicom
 wakeonlan
+iperf
+iperf3
+iftop
+lsof
+openssh-client
