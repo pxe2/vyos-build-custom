@@ -1,0 +1,6 @@
+#!/bin/bash
+echo I: Installing HAProxy from backports
+echo "deb http://ftp.debian.org/debian jessie-backports main" >> /etc/apt/sources.list
+apt-get update
+apt-get install --assume-yes -t jessie-backports haproxy
+
