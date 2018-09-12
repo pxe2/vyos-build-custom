@@ -19,6 +19,8 @@ build-iso:
     - mv build/live-image-amd64.hybrid.iso output/
     - echo "${CI_GPG_PRIVATE}" | gpg --import
     - echo "${CI_GPG_KEY}" | gpg --batch --yes --passphrase-fd 0 -a --output output/live-image-amd64.hybrid.iso.asc --detach-sig output/live-image-amd64.hybrid.iso
+    - cd output
+    - sha256sum * > SHA256SUMS
   stage: build
   artifacts:
     paths:
