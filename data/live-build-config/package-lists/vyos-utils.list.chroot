@@ -18,3 +18,8 @@ iperf3
 iftop
 lsof
 openssh-client
+openconnect
+docker
+isc-dhcp-server
+bind9
+byobu
