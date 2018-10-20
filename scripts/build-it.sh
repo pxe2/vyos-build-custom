@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-git clone https://github.com/vyos/vyos-build /usr/src/vyos-build
+git clone https://github.com/pxe2/vyos-build-custom /usr/src/vyos-build
 cd /usr/src/vyos-build 
 ./configure 
 make iso
